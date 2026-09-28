@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-----------------------STYLE.CSS------------------------------------------------->
     <link rel="stylesheet" href="index.css" />
+
     <!--------------------Font Awesome------------------------------------------------->
     <link
       rel="stylesheet"
@@ -22,7 +23,14 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-
+    <!-------------------Swiper Cdn---------------------------------------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!----------------------js link---------------------------------------------------->
+    <script src="index.js" defer></script>
     <title>Home Page</title>
   </head>
   <body>
@@ -56,7 +64,7 @@
             <!------------------------------------------Nav-Center--------------------------------------->
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Men</a>
@@ -81,8 +89,35 @@
 
             <div class="navbar-button text-light m-2">Register</div>
             <div class="navbar-button text-light m-2">Login</div>
-            <div class="">
-              <i class="fa-solid fa-cart-shopping text-white m-2 fa-2x"></i>
+            <div class="shopping">
+              <div class="shopping-icon">
+                <i class="fa-solid fa-cart-shopping text-white m-2 fa-2x"></i>
+              </div>
+              <div class="shopping-cart hidden">
+                <div class="product-item ">
+                  <div class="shopping-cart1 ">
+                    <img src="imags/Popular-products/1.jpg" />
+                    <div class="shopping-details">
+                      <h6 class="">Summer black dress</h6>
+                      <small class=" ">Quantity: 1</small>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <!-- product item -->
+                <div class="product-item">
+                  <div class="shopping-cart1">
+                    <img src="imags/Popular-products/2.jpg" alt="Product" />
+                    <div class="shopping-details">
+                      <h6 class="">Black suit</h6>
+                      <small class="">Quantity: 1</small>
+                    </div>
+                  </div>
+                </div>
+                <a href="cart.html" class="text-decoration-none"
+                  ><div class="shopping-cart-btn mt-2">Go to Cart</div></a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -242,9 +277,9 @@
       </div>
     </section>
     <!-------------------------------Latest products---------------------------------------------------------------------------------------->
-            <section id="Popular-products" class="p-3">
+    <section id="Popular-products" class="p-3">
       <div class="container">
-        <h1 class="m-5 d-flex justify-content-center ">Latest products</h1>
+        <h1 class="m-5 d-flex justify-content-center">Latest products</h1>
         <div class="popular-big-div">
           <div class="popular-div">
             <img src="imags/Popular-products/5.jpg" alt="" />
@@ -281,5 +316,180 @@
         </div>
       </div>
     </section>
+    
+    <!--------------------------------------Banner--------------------------------------------------------------------------------------------------->
+    <section id="Banner" class="mt-5 pt-5">
+      <div class="container">
+        <div class="Banner1">
+          <img src="imags/banner1.jpg" alt="" />
+
+          <div class="Banner2">
+            <h1 style="color: #fff">Welcome to Our Shop</h1>
+            <div class="Banner-btn-big-div">
+              <div class="Banner-btn">Shop Now</div>
+              <div class="Banner-btn">New Arrivals</div>
+              <div class="Banner-btn">Sale</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------------------------Our Blog---------------------------------------------------------------------------------------------->
+    <section id="Our-Blog" class="mt-5 pt-5">
+      <div class="container Our-Blog mb-5">
+        <h1 style="color: black; font-weight: 900">
+          Discover <span style="color: red">Our</span> Blog
+        </h1>
+        <br />
+        <p style="color: rgb(3, 3, 3)">
+          Stay updated with the latest trends, tips, and stories in the world of
+          fashion
+        </p>
+      </div>
+      <div class="container">
+        <div class="Our-Blog-bigdiv">
+          <div class="Our-Blog-1">
+            <img src="imags/fashion-trends.jpg" alt="" />
+            <div class="Our-Blog-2">
+              <h6>Fashion Trends</h6>
+              <h2>Latest Shirt Trends for 2024</h2>
+              <p>
+                Explore the hottest shirt trends of 2024. From bold prints to
+                classic styles, stay ahead of the fashion curve with our expert
+                insights.
+              </p>
+            </div>
+            <div class="Our-Blog-btn">Read More</div>
+          </div>
+          <div class="Our-Blog-1">
+            <img src="imags/stylisng-tips.jpg" alt="" />
+            <div class="Our-Blog-2">
+              <h6>Styling Tips</h6>
+              <h2>How to Style Your Shirt for Any Occasion</h2>
+              <p>
+                Learn how to style your shirt for different occasions, whether
+                it's a casual day out or a formal event. Get tips from fashion
+                experts.
+              </p>
+            </div>
+            <div class="Our-Blog-btn">Read More</div>
+          </div>
+          <div class="Our-Blog-1">
+            <img src="imags/customer-stories.jpg" alt="" />
+            <div class="Our-Blog-2">
+              <h6>Customer Stories</h6>
+              <h2>Real Stories from Our Happy Customers</h2>
+              <p>
+                Read about the experiences of our customers. Discover how our
+                shirts have made a difference in their lives and their personal
+                style.
+              </p>
+            </div>
+            <div class="Our-Blog-btn">Read More</div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5 mb-5 pt-5 pb-5"><hr /></div>
+    </section>
+    <!----------------------------------------Subscribe----------------------------------------------------------------------------->
+    <section id="Subscribe">
+      <div class="container Subscribe">
+        <h2>
+          Join our newsletter and
+          <span style="color: red"> get $50 discount</span> for your first order
+        </h2>
+      </div>
+      <div class="Subscribe-1 mb-5">
+        <input
+          type="text"
+          placeholder="Enter your email address"
+          class="form-control"
+        />
+        <div class="Subscribe-btn">Subscribe</div>
+      </div>
+      <div class="mt-5 pt-5"><hr /></div>
+    </section>
+    <!-----------------------------------------TOP-FOOTER------------------------------------------------------------------------------------------>
+    <section id="TOP-FOOTER">
+      <div class="container">
+        <div class="TOP-FOOTER">
+          <div class="footer-div">
+            <p class="footer-head">Shop</p>
+            <ul>
+              <li>Shop</li>
+              <li>Women</li>
+              <li>Men</li>
+              <li>Shoes</li>
+              <li>Accessories</li>
+            </ul>
+          </div>
+          <div class="footer-div">
+            <p class="footer-head">Pages</p>
+            <ul>
+              <li>Shop</li>
+              <li>Product</li>
+              <li>Checkout</li>
+              <li>404</li>
+            </ul>
+          </div>
+          <div class="footer-div">
+            <p class="footer-head">Account</p>
+            <ul>
+              <li>Cart</li>
+              <li>Registration</li>
+              <li>Login</li>
+            </ul>
+          </div>
+          <div class="footer-div">
+            <p class="footer-head">Follow Us</p>
+            <ul>
+              <li><i class="fa-brands fa-facebook"></i>Facebook</li>
+              <li><i class="fa-brands fa-x-twitter"></i>Twitter</li>
+              <li><i class="fa-brands fa-instagram"></i>Instagram</li>
+              <li><i class="fa-brands fa-pinterest"></i>Pinterest</li>
+              <li><i class="fa-brands fa-youtube"></i> YouTube</li>
+            </ul>
+          </div>
+          <div class="footer-div">
+            <p class="footer-head">Contact Us</p>
+            <ul>
+              <li>123 Street Name, Paris, France</li>
+              <li>Phone: (123) 456-7890</li>
+              <li style="text-decoration: underline">
+                Email: info@company.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5"><hr /></div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer row">
+          <div class="footer-left col-lg-10">
+            <h6 style="font-weight: 900; color: black">
+              © 2024 Your Company. All rights reserved by
+              <span style="color: green">Maksim</span> M • Distributed by
+              <span style="color: green">ThemeWagon </span>
+            </h6>
+            <h5 class="Privacy">
+              <li>Privacy Policy</li>
+              <li>Terms of Service</li>
+              <li>FAQ</li>
+            </h5>
+            <p>
+              Your shop's description goes here. This is a brief introduction to
+              your shop and what you offer.
+            </p>
+          </div>
+          <div class="footer-pay col-lg-2">
+            <li><i class="fa-brands fa-paypal fa-2x"></i></li>
+            <li><i class="fa-brands fa-stripe fa-2x"></i></li>
+            <li><i class="fa-brands fa-cc-visa fa-2x"></i></li>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
