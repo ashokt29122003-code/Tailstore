@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-----------------------STYLE.CSS------------------------------------------------->
+    <link rel="stylesheet" href="index.css" />
+
+    <!--------------------Font Awesome------------------------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+    <!---------------------Bootstrap--------------------------------------------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-------------------Swiper Cdn---------------------------------------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!----------------------js link---------------------------------------------------->
+    <script src="index.js" defer></script>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <!--------------------------------------------------------------Navbar--------------------------------------------------------------------------->
+    <section id="navbar">
+      <!-----------------------------------------------Nav-Right-------------------------------------------------------------------->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">
+            <h1 class="mb-0 position-relative">
+              <span class="text-danger">Tail</span>Store
+            </h1>
+            <div class="doot"></div>
+            <small class="d-flex mt-0 justify-content-center fs-6"
+              >TEMPLATE</small
+            ></a
+          >
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!------------------------------------------Nav-Center--------------------------------------->
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">404 Page</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Checkout</a>
+              </li>
+            </ul>
+            <!-------------------------Navbar-Button-------------------------------------------------->
+
+            <div class="navbar-button text-light m-2">Register</div>
+            <div class="navbar-button text-light m-2">Login</div>
+            <div class="shopping">
+              <div class="shopping-icon">
+                <i class="fa-solid fa-cart-shopping text-white m-2 fa-2x"></i>
+              </div>
+              <div class="shopping-cart hidden">
+                <div class="product-item">
+                  <div class="shopping-cart1">
+                    <img src="imags/Popular-products/1.jpg" />
+                    <div class="shopping-details">
+                      <h6 class="">Summer black dress</h6>
+                      <small class=" ">Quantity: 1</small>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <!-- product item -->
+                <div class="product-item">
+                  <div class="shopping-cart1">
+                    <img src="imags/Popular-products/2.jpg" alt="Product" />
+                    <div class="shopping-details">
+                      <h6 class="">Black suit</h6>
+                      <small class="">Quantity: 1</small>
+                    </div>
+                  </div>
+                </div>
+                <a href="cart.html" class="text-decoration-none"
+                  ><div class="shopping-cart-btn mt-2">Go to Cart</div></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-----------------------------------------------------------Register Form----------------------------------------------------------------------------------------------------->
+    <section id="Register-Form" style="margin-top: 200px">
+      <div class="container">
+        <h1>Plz.. Register</h1>
+        <label for="">Name</label
+        ><input
+          placeholder="Enter Your Name"
+          type="text"
+          class="form-control"
+        />
+        <label for="">Last Name</label
+        ><input
+          placeholder="Enter Your Last Name"
+          type="text"
+          class="form-control"
+        />
+        <label for="">Phone </label
+        ><input
+          placeholder="Enter Your Phone Nambar"
+          type="text"
+          class="form-control"
+        />
+        <label for="">Your Email</label><input class="form-control" type="" placeholder="Enter Email">
+        <label for="">Password</label
+        ><input placeholder="Password" type="text" class="form-control" />
+        <label for="">Repet_passwpord</label
+        ><input
+          placeholder="Repet passwpord"
+          type="text"
+          class="form-control"
+        />
+      </div>
+    </section>
+  </body>
+</html>
