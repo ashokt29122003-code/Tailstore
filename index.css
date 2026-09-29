@@ -322,7 +322,6 @@ body {
   .popular-big-div {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 30px;
-<<<<<<< HEAD
   }
 }
 @media (max-width: 599px) {
@@ -722,13 +721,12 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .shopping-1div td{
+  .shopping-1div td {
     font-size: 10px;
   }
   .increse-decress button {
     width: 20px;
     height: 20px;
-    
   }
   .increse-decress button:hover {
     background-color: #fff;
@@ -736,8 +734,8 @@ body {
     border: 1px solid red;
   }
   .increse-decress p {
-    margin-left:2px;
-    margin-right:2px;
+    margin-left: 2px;
+    margin-right: 2px;
     margin-top: 2px;
   }
   .summary {
@@ -748,8 +746,6 @@ body {
   .prize {
     font-weight: bolder;
     font-size: 22px;
-=======
->>>>>>> da1de059d158fa6c621b73e2985cd5ff65109ddc
   }
 }
 @media (max-width: 599px) {
@@ -1126,7 +1122,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.prize{
+.prize {
   font-weight: bolder;
   font-size: 22px;
 }
